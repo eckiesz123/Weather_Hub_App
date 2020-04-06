@@ -1,0 +1,33 @@
+#welcomeTitle {
+  background-color: blue;
+  color: white;
+}
+
+#welcomeTitle h1 {
+  text-align: center;
+  font-family: arial;
+}
+
+#validZip h2 {
+  background-color: aqua;
+}
+
+#currentCond h2 {
+  background-color: #99ff66;
+}
+
+#favHeading h2 {
+  background-color: #ff9933;
+}
+
+#addFav {
+  margin-bottom: 20px;
+}
+
+#viewFav {
+  margin-bottom: 20px;
+}
+
+#footer {
+  color: blue;
+}

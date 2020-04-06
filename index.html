@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <title>Weather Hub</title>
+</head>
+
+<body>
+
+<!-- insert image of Weather Vain from a clip art -->
+  <div id=welcomeImage>
+    <img src="weather-vane-clipart-3.jpg" />
+  </div>
+
+  <div id="welcomeTitle">
+    <h1>Welcome to the Weather Hub</h1>
+    <p>This app will retrieve the current temperature from the Weatherstack API
+    for any U.S. City with a valid zip code. This app will also allow the user
+    to store the results under a Favorites section. These favorites can be
+    viewed, updated, and deleted.</p>
+  </div>
+
+  <div id="validZip">
+    <h2>Enter a valid zip code</h2>
+  </div>
+
+  <form id="form" autocomplete="off">
+    <label for="input">Zip Code:</label>
+    <input type="number" id="input">
+    <label for="comments">Comments (Max 20 long):</label>
+    <input type="text" id="comments" maxlength = 20>
+    <button id="submit">Submit</button>
+  </form>
+
+  <div id="currentCond">
+    <h2>Current Conditions</h2>
+  </div>
+
+  <div id="temperatureField"></div>
+
+  <div id="favHeading">
+    <h2>Favorites</h2>
+  </div>
+
+  <div id="favorites">
+
+  </div>
+
+  <form id="favForm" autocomplete="off">
+    <button id="addFav">Add to Favorites</button>
+    <br>
+    <button id="viewFav">View Favorites</button>
+    <br>
+    <form id="updateForm" autocomplete="off">
+      <label for="updateInput">Favorite Number to Update:</label>
+      <input type="number" id="updateInput">
+      <button id="updateFav">Update Favorites</button>
+    </form>
+    <br>
+    <br>
+    <form id="delForm" autocomplete="off">
+      <label for="delInput">Favorite Number to Delete:</label>
+      <input type="number" id="delInput">
+      <button id="deleteFav">Delete Favorites</button>
+    </form>
+    <br>
+    <button id="clearFav">Clear Favorites</button>
+  </form>
+
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="./index.js"></script>
+
+  <div id=footer>
+    <h6>Copyright 2020 Erik Kiesz</h6>
+  </div>
+  
+</body>
+
+</html>
